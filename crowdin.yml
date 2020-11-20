@@ -1,3 +1,0 @@
-files:
-  - source: /sys/src/*.json
-    translation: /%original_path%/%language%-%original_file_name%
