@@ -1,7 +1,7 @@
 {
-    "Key1": "Live Webinar on Git",
-    "Key2": "Spend less $time on localisation",
-    "Key3": "Receive more profits from continuous localisation",
-    "Key4": "You have {projectCount, plural, one{project} other{projects}}",
-    "Key5": "You are one step ahead of making your product multilingual 🚀"
+    "Key1": "Webinar in diretta su Git",
+    "Key2": "Spendi meno $time per la localizzazione",
+    "Key3": "Ricevere più profitti dalla localizzazione continua",
+    "Key4": "Hai {projectCount, plural, one{progetto} other{progetti}}",
+    "Key5": "Sei un passo avanti nel rendere il tuo prodotto multilingue 🚀"
 }
