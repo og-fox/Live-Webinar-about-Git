@@ -30,7 +30,7 @@ jobs:
     # Note that this is not a "branch" in the git sense, but more like a top-level directory in your Crowdin project.
     # This branch does NOT need to be manually created. It will be created automatically by the action.
 #        crowdin_branch_name: '[og-fox.Live-Webinar-about-Git] feature'
-        crowdin_branch_name: '"some\\ branch"'
+        crowdin_branch_name: '"some\ branch"'
         #identity: '/path/to/your/credentials/file'
         #config: '/crowdin.yml'
         #dryrun_action: true
