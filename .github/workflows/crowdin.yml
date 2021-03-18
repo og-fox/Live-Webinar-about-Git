@@ -1,0 +1,40 @@
+name: Crowdin Action
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: crowdin action
+      uses: crowdin/github-action@1.0.4
+      with:
+      
+      # upload options
+        upload_translations: true
+        upload_sources: false
+        
+      #download options
+        download_translations: true
+        localization_branch_name: l10n_crowdin_action
+        create_pull_request: false
+        
+    # This is the name of the top-level directory that Crowdin will use for files.
+    # Note that this is not a "branch" in the git sense, but more like a top-level directory in your Crowdin project.
+    # This branch does NOT need to be manually created. It will be created automatically by the action.
+        crowdin_branch_name: "[og-fox.Live-Webinar-about-Git] feature"
+        #identity: '/path/to/your/credentials/file'
+        config: '/crowdin.yml'
+        dryrun_action: true
+      
+    env:
+        GITHUB_TOKEN: 5e4efb4085ec15a5ccdf91a7271e4df543ceb409
+        CROWDIN_PROJECT_ID: 429866
+        CROWDIN_PERSONAL_TOKEN: 4818147248b4e22fda5b5fd7080fd73e70a3bc037528acf91c0cdd6765f4f4bc2daaad5d21114fbf
