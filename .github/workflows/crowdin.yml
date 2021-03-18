@@ -31,8 +31,8 @@ jobs:
     # This branch does NOT need to be manually created. It will be created automatically by the action.
         crowdin_branch_name: '[og-fox.Live-Webinar-about-Git]%20feature'
         #identity: '/path/to/your/credentials/file'
-        config: '/crowdin.yml'
-        dryrun_action: true
+        #config: '/crowdin.yml'
+        #dryrun_action: true
       
     env:
         GITHUB_TOKEN: 5e4efb4085ec15a5ccdf91a7271e4df543ceb409
