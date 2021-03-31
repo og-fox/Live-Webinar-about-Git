@@ -1,7 +1,7 @@
 files:
   - source: /sys/src/sample.json
     translation: /%original_path%/%two_letters_code%-%original_file_name%
-     "excluded_target_languages": [
+    excluded_target_languages: [
       "uk",
       "en"
     ]
