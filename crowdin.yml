@@ -1,10 +1,9 @@
-export_languages: [
-  "fr"
-]
+project_id_env: CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_PERSONAL_TOKEN
+export_languages:
+  - fr
 files:
   - source: /sys/src/sample.json
+    ignore:
+      - '**/do-not-translate*'
     translation: /%original_path%/%two_letters_code%-%original_file_name%
-    excluded_target_languages: [
-      "en",
-      "fr"
-    ]
